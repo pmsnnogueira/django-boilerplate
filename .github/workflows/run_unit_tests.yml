@@ -1,0 +1,23 @@
+name: Run unit tests
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+  pull_request:
+    branches:
+      - main
+      - develop
+
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install Dependencies
+      run: |
+          poetry install
+    - name: Run PyTest
+      run: |
+          pytest
