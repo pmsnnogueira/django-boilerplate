@@ -1,0 +1,16 @@
+.cicd
+.gitlab
+.gitlab-ci.yml
+.vscode
+README.md
+__pycache__/
+deployments
+docker-compose*.yml
+docs
+logs/
+pyproject.toml
+venv/
+node_modules
+npm-debug.log
+schema
+.env
