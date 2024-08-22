@@ -14,4 +14,4 @@ docker-down:
 	$(MAKE) docker-command cmd="down"
 
 docker-image-build:
-	docker build -f config/compose/docker-compose.yml -t $(image-name) .
+	docker build -f ./docker-compose.yml -t $(image-name) .
